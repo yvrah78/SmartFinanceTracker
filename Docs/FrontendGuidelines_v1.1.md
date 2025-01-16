@@ -1,6 +1,6 @@
-Guías de Frontend para SmartFinanceTracker
+Guías de Frontend para SmartFinanceTracker v1.1
 
-Este documento proporciona directrices sobre cómo debe ser diseñado y desarrollado el frontend de SmartFinanceTracker. Incluye estilos de código, patrones de diseño, y estándares de UI/UX.
+Este documento proporciona directrices actualizadas sobre cómo debe ser diseñado y desarrollado el frontend de SmartFinanceTracker. Incluye estilos de código, patrones de diseño, estándares de UI/UX, y ahora también la integración con la lógica de negocio.
 
 Estilo de Código
 
@@ -33,6 +33,39 @@ Componentes
 	•	Picker para seleccionar periodos de análisis o categorías.
 	•	TextField para la búsqueda de transacciones.
 
+Integración con la Lógica de Negocio:
+	•	Categorización de Transacciones: La UI debe permitir al usuario revisar y ajustar las categorías asignadas por la API de Grok 2. Esto implica un diseño de la lista de transacciones que haga fácil la interacción y la corrección. Aquí un ejemplo de cómo se podría implementar:
+struct TransactionRow: View {
+    @ObservedObject var transaction: Transaction
+    
+    var body: some View {
+        HStack {
+            VStack(alignment: .leading) {
+                Text(transaction.date ?? Date(), style: .date)
+                Text(transaction.description ?? "")
+            }
+            Spacer()
+            Text(transaction.amount, format: .currency(code: "USD"))
+                .foregroundColor(transaction.amount < 0 ? .red : .green)
+            // Menú contextual para editar la categoría
+            Menu {
+                ForEach(Category.allCases, id: \.self) { category in
+                    Button(action: {
+                        transaction.category = category.rawValue
+                        // Aquí iría la lógica para actualizar en Core Data
+                    }) {
+                        Text(category.rawValue)
+                    }
+                }
+            } label: {
+                Image(systemName: "ellipsis.circle")
+                    .foregroundColor(.gray)
+            }
+        }
+    }
+}
+
+
 Colores y Tipografía
 
 	•	Paleta de Colores: Seleccionaremos una paleta de colores que sea agradable visualmente y accesible:
@@ -46,6 +79,4 @@ Colores y Tipografía
 
 Consideraciones de Desarrollo
 
-	•	Prototipos: Antes de implementar, usaremos V0 para crear prototipos de alta fidelidad, asegurando que el diseño se traduzca bien en la implementación.
-	•	Revisión: Implementaremos revisiones de código para asegurar que las directrices de estilo y diseño se siguen correctamente.
-	•	Iteración: Basándonos en el feedback de usuarios y pruebas, iteraremos sobre el diseño para mejorar la usabilidad y la experiencia visual.
+	•	Prototipos: Antes de implementar, usaremos V0 para crear prototipos
