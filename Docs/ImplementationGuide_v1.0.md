@@ -1,4 +1,4 @@
-Guía de Implementación para SmartFinanceTracker v1.0
+Guía de Implementación para SmartFinanceTracker v2.0
 
 Esta guía está diseñada para proporcionar una dirección clara en la implementación del proyecto SmartFinanceTracker, asegurando que cada paso del desarrollo sea intencional y coherente con la visión del proyecto. Cada sección de esta guía se enlaza con la documentación existente para mantener la consistencia.
 
@@ -19,18 +19,25 @@ func extractAndCategorize(from pdfURL: URL) -> [Transaction] {
     // Pseudocódigo para la extracción y categorización
 }
 
-
 3. Manejo de Core Data
 
-	•	Correlación con: BackendStructureDoc_v1.1.md y TechStackDoc_v1.1.md
-	•	Descripción: La implementación de Core Data y la sincronización con iCloud se detalla en estos documentos.
-	•	Acción: Consultar BackendStructureDoc_v1.1.md para la arquitectura de datos y TechStackDoc_v1.1.md para la configuración de Core Data.
+	•	Correlación con: BackendStructureDoc_v1.1.md, TechStackDoc_v1.1.md, y DataIntegrityAndBackupStrategy_v2.0.md
+	•	Descripción: La implementación de Core Data, la sincronización con iCloud, y las nuevas estrategias de integridad de datos y respaldo se detallan en estos documentos.
+	•	Acción:
+	•	Consultar BackendStructureDoc_v1.1.md para la arquitectura de datos.
+	•	Revisar TechStackDoc_v1.1.md para la configuración de Core Data.
+	•	Implementar las estrategias de DataIntegrityAndBackupStrategy_v2.0.md para la validación, transacciones atómicas, control de versiones, y respaldo.
 
-// Ejemplo de manejo de concurrencia en Core Data
+// Ejemplo de manejo de concurrencia y validación en Core Data
 context.perform {
-    // Operaciones de Core Data
+    if DataValidator.validateTransaction(transaction) {
+        do {
+            try context.save() // Transacción atómica
+        } catch {
+            context.rollback()
+        }
+    }
 }
-
 
 4. Integración con APIs
 
@@ -44,7 +51,6 @@ struct TransactionDTO: Codable {
     let description: String
     let amount: Double
 }
-
 
 5. SwiftUI y Accesibilidad
 
@@ -65,21 +71,25 @@ struct TransactionPreviewRow: View {
     }
 }
 
-
 6. Testing
 
-	•	Correlación con: PRD_v1.1.md
-	•	Descripción: Los requisitos funcionales y no funcionales del PRD incluyen la necesidad de pruebas para asegurar la calidad.
-	•	Acción: Consultar PRD_v1.1.md para los casos de uso y requisitos que deben ser probados.
+	•	Correlación con: PRD_v1.1.md y DataIntegrityAndBackupStrategy_v2.0.md
+	•	Descripción: Los requisitos funcionales y no funcionales del PRD incluyen la necesidad de pruebas para asegurar la calidad. Además, se deben probar las nuevas estrategias de integridad y respaldo.
+	•	Acción:
+	•	Consultar PRD_v1.1.md para los casos de uso y requisitos que deben ser probados.
+	•	Asegurar que las pruebas incluyan validación de datos, manejo de transacciones atómicas, y restauración desde respaldos.
 
 // Ejemplo de cómo podríamos expandir las pruebas
 func testPDFImportWithEmptyFile() {
     // Pseudocódigo para probar la importación de un PDF vacío
 }
 
+func testDataIntegrity() {
+    // Pseudocódigo para probar la validación de datos y transacciones atómicas
+}
 
 7. Flujo de Usuario
 
 	•	Correlación con: AppFlowDoc_v1.1.md
 	•	Descripción: Este documento detalla el flujo de la aplicación desde la perspectiva del usuario.
-	•	Acción: Revisar AppFlowDoc_v1.1.md para asegurar que la implementación sigue el flujo de usuario definido.
+	•	Acción: Revisar AppFlowDoc_v1.1.md para asegurar que la implementación sigue el flujo de usuario definido, incluyendo las nuevas funcionalidades de respaldo y restauración.
