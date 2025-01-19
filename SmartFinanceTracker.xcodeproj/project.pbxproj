@@ -6,6 +6,17 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6B0F574A2D3D8A6300D4A10F /* TechStackDoc_v1.1.md in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F57482D3D8A6300D4A10F /* TechStackDoc_v1.1.md */; };
+		6B0F574B2D3D8A6300D4A10F /* ApplePolicies&Practices.md in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F57422D3D8A6300D4A10F /* ApplePolicies&Practices.md */; };
+		6B0F574C2D3D8A6300D4A10F /* BackendStructureDoc_v1.1.md in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F57432D3D8A6300D4A10F /* BackendStructureDoc_v1.1.md */; };
+		6B0F574D2D3D8A6300D4A10F /* AppFlowDoc_v1.1.md in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F57412D3D8A6300D4A10F /* AppFlowDoc_v1.1.md */; };
+		6B0F574E2D3D8A6300D4A10F /* FrontendGuidelines_v1.1.md in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F57452D3D8A6300D4A10F /* FrontendGuidelines_v1.1.md */; };
+		6B0F574F2D3D8A6300D4A10F /* PRD_v1.1.md in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F57472D3D8A6300D4A10F /* PRD_v1.1.md */; };
+		6B0F57502D3D8A6300D4A10F /* ImplementationGuide_v1.0.md in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F57462D3D8A6300D4A10F /* ImplementationGuide_v1.0.md */; };
+		6B0F57512D3D8A6300D4A10F /* DataIntegrityandBackupStrategy_v1.md in Resources */ = {isa = PBXBuildFile; fileRef = 6B0F57442D3D8A6300D4A10F /* DataIntegrityandBackupStrategy_v1.md */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6B2922062D3D858800C892F9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +35,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B0F57412D3D8A6300D4A10F /* AppFlowDoc_v1.1.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AppFlowDoc_v1.1.md; sourceTree = "<group>"; };
+		6B0F57422D3D8A6300D4A10F /* ApplePolicies&Practices.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = "ApplePolicies&Practices.md"; sourceTree = "<group>"; };
+		6B0F57432D3D8A6300D4A10F /* BackendStructureDoc_v1.1.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = BackendStructureDoc_v1.1.md; sourceTree = "<group>"; };
+		6B0F57442D3D8A6300D4A10F /* DataIntegrityandBackupStrategy_v1.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = DataIntegrityandBackupStrategy_v1.md; sourceTree = "<group>"; };
+		6B0F57452D3D8A6300D4A10F /* FrontendGuidelines_v1.1.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = FrontendGuidelines_v1.1.md; sourceTree = "<group>"; };
+		6B0F57462D3D8A6300D4A10F /* ImplementationGuide_v1.0.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = ImplementationGuide_v1.0.md; sourceTree = "<group>"; };
+		6B0F57472D3D8A6300D4A10F /* PRD_v1.1.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = PRD_v1.1.md; sourceTree = "<group>"; };
+		6B0F57482D3D8A6300D4A10F /* TechStackDoc_v1.1.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = TechStackDoc_v1.1.md; sourceTree = "<group>"; };
 		6B2921EE2D3D858600C892F9 /* SmartFinanceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartFinanceTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2922052D3D858800C892F9 /* SmartFinanceTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartFinanceTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B29220F2D3D858800C892F9 /* SmartFinanceTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartFinanceTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,9 +104,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B0F57492D3D8A6300D4A10F /* Docs */ = {
+			isa = PBXGroup;
+			children = (
+				6B0F57412D3D8A6300D4A10F /* AppFlowDoc_v1.1.md */,
+				6B0F57422D3D8A6300D4A10F /* ApplePolicies&Practices.md */,
+				6B0F57432D3D8A6300D4A10F /* BackendStructureDoc_v1.1.md */,
+				6B0F57442D3D8A6300D4A10F /* DataIntegrityandBackupStrategy_v1.md */,
+				6B0F57452D3D8A6300D4A10F /* FrontendGuidelines_v1.1.md */,
+				6B0F57462D3D8A6300D4A10F /* ImplementationGuide_v1.0.md */,
+				6B0F57472D3D8A6300D4A10F /* PRD_v1.1.md */,
+				6B0F57482D3D8A6300D4A10F /* TechStackDoc_v1.1.md */,
+			);
+			path = Docs;
+			sourceTree = "<group>";
+		};
 		6B2921E52D3D858500C892F9 = {
 			isa = PBXGroup;
 			children = (
+				6B0F57492D3D8A6300D4A10F /* Docs */,
 				6B2921F02D3D858600C892F9 /* SmartFinanceTracker */,
 				6B2922082D3D858800C892F9 /* SmartFinanceTrackerTests */,
 				6B2922122D3D858800C892F9 /* SmartFinanceTrackerUITests */,
@@ -225,6 +260,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B0F574A2D3D8A6300D4A10F /* TechStackDoc_v1.1.md in Resources */,
+				6B0F574B2D3D8A6300D4A10F /* ApplePolicies&Practices.md in Resources */,
+				6B0F574C2D3D8A6300D4A10F /* BackendStructureDoc_v1.1.md in Resources */,
+				6B0F574D2D3D8A6300D4A10F /* AppFlowDoc_v1.1.md in Resources */,
+				6B0F574E2D3D8A6300D4A10F /* FrontendGuidelines_v1.1.md in Resources */,
+				6B0F574F2D3D8A6300D4A10F /* PRD_v1.1.md in Resources */,
+				6B0F57502D3D8A6300D4A10F /* ImplementationGuide_v1.0.md in Resources */,
+				6B0F57512D3D8A6300D4A10F /* DataIntegrityandBackupStrategy_v1.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
