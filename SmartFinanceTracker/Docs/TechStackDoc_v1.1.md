@@ -1,39 +1,30 @@
-Guía de Implementación para SmartFinanceTracker v2.0
-
-Estado Actual
-
-	•	Estructura del Proyecto: Revisión completada.
-	•	Responsabilidades Claras: Pendiente de implementación.
-	•	Manejo de Core Data: Pendiente de configuración.
-	•	Integración con APIs: Pendiente de desarrollo.
-	•	SwiftUI y Accesibilidad: Pendiente de diseño.
-	•	Testing: Pendiente de inicio.
-	•	Flujo de Usuario: Pendiente de revisión.
-
-Estructura del Proyecto
-
-	•	Correlación con: TechStackDoc_v1.1.md
-	•	Descripción: Este documento detalla las tecnologías y la estructura del proyecto. Usaremos esta información para organizar nuestro código en módulos coherentes.
-	•	Acción: Consultar TechStackDoc_v1.1.md para entender cómo se integran las tecnologías en la estructura del proyecto.
-
-Próximos Pasos: Una vez comprendida la estructura, procede a Responsabilidades Claras.
-
-Documento de Pila Tecnológica para SmartFinanceTracker v1.1
+# Documento de Pila Tecnológica para SmartFinanceTracker v1.1
 
 Este documento detalla las tecnologías, frameworks, bibliotecas, y herramientas que se utilizarán para desarrollar SmartFinanceTracker, con un enfoque en cómo se integran y su grado de implementación.
 
-Lenguaje/Entorno
+## Estado Actual
 
-	•	Swift: Lenguaje de programación principal para el desarrollo de la aplicación. Swift es conocido por su seguridad, velocidad, y su integración perfecta con las APIs de Apple.
-	•	SwiftUI: Framework de Apple para la construcción de interfaces de usuario declarativas y reactivas. Usaremos SwiftUI para crear una UI moderna y consistente con las directrices de diseño de Apple, facilitando la implementación de la lógica de negocio en la vista.
+- [x] **Estructura del Proyecto:** Revisión completada.
+- [ ] **Responsabilidades Claras:** Pendiente de implementación.
+- [ ] **Manejo de Core Data:** Pendiente de configuración.
+- [ ] **Integración con APIs:** Pendiente de desarrollo.
+- [ ] **SwiftUI y Accesibilidad:** Pendiente de diseño.
+- [ ] **Testing:** Pendiente de inicio.
+- [ ] **Flujo de Usuario:** Pendiente de revisión.
 
+## Lenguaje/Entorno
+
+- **Swift:** Lenguaje de programación principal para el desarrollo de la aplicación. Swift es conocido por su seguridad, velocidad, y su integración perfecta con las APIs de Apple.
+- **SwiftUI:** Framework de Apple para la construcción de interfaces de usuario declarativas y reactivas. Usaremos SwiftUI para crear una UI moderna y consistente con las directrices de diseño de Apple, facilitando la implementación de la lógica de negocio en la vista.
+
+```swift
 struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
                 // Aquí iría la lógica para mostrar las transacciones
             }
-            .navigationTitle("Transacciones")
+            .navigationTitle(“Transacciones”)
         }
     }
 }
@@ -76,3 +67,8 @@ Herramientas de Desarrollo
 	•	Xcode: Entorno de desarrollo integrado (IDE) oficial de Apple, necesario para el desarrollo en Swift/SwiftUI. Incluye el simulador de iOS para pruebas.
 	•	Git: Sistema de control de versiones para el seguimiento de cambios en el código y la colaboración. Utilizaremos GitHub para alojar el repositorio.
 	•	GitHub: Plataforma para el control de versiones y la colaboración en el desarrollo del proyecto. Aquí se alojará el código y la documentación.
+
+Próximos Pasos: Una vez configuradas las herramientas de desarrollo, procede a Responsabilidades Claras.
+
+
+El siguiente documento que necesitas proporcionarme para su revisión y modificación es el `BackendStructureDoc_v2.0.md`.
