@@ -1,31 +1,32 @@
-Guía de Implementación para SmartFinanceTracker v2.0
+# Guía de Implementación para SmartFinanceTracker v2.0
 
 Esta guía está diseñada para proporcionar una dirección clara en la implementación del proyecto SmartFinanceTracker, asegurando que cada paso del desarrollo sea intencional y coherente con la visión del proyecto. Cada sección de esta guía se enlaza con la documentación existente para mantener la consistencia.
 
-Estado Actual
+## Estado Actual
 
-	•	Estructura del Proyecto: Revisión pendiente.
-	•	Responsabilidades Claras: Documento pendiente de actualización.
-	•	Manejo de Core Data: Configuración pendiente.
-	•	Integración con APIs: Pendiente de desarrollo.
-	•	SwiftUI y Accesibilidad: Pendiente de diseño.
-	•	Testing: Pendiente de inicio.
-	•	Flujo de Usuario: Pendiente de revisión.
+- [ ] **Estructura del Proyecto:** Revisión pendiente.
+- [ ] **Responsabilidades Claras:** Documento pendiente de actualización.
+- [ ] **Manejo de Core Data:** Configuración pendiente.
+- [ ] **Integración con APIs:** Pendiente de desarrollo.
+- [ ] **SwiftUI y Accesibilidad:** Pendiente de diseño.
+- [ ] **Testing:** Pendiente de inicio.
+- [ ] **Flujo de Usuario:** Pendiente de revisión.
 
-Estructura del Proyecto
+## Estructura del Proyecto
 
-	•	Correlación con: TechStackDoc_v1.1.md
-	•	Descripción: Este documento detalla las tecnologías y la estructura del proyecto. Usaremos esta información para organizar nuestro código en módulos coherentes.
-	•	Acción: Consultar TechStackDoc_v1.1.md para entender cómo se integran las tecnologías en la estructura del proyecto.
+- **Correlación con:** [TechStackDoc_v1.1.md](#documento-de-pila-tecnológica-para-smartfinancetracker-v11)
+- **Descripción:** Este documento detalla las tecnologías y la estructura del proyecto. Usaremos esta información para organizar nuestro código en módulos coherentes.
+- **Acción:** Consultar [TechStackDoc_v1.1.md](#documento-de-pila-tecnológica-para-smartfinancetracker-v11) para entender cómo se integran las tecnologías en la estructura del proyecto.
 
-Próximos Pasos: Una vez comprendida la estructura, procede a Responsabilidades Claras.
+**Próximos Pasos:** Una vez comprendida la estructura, procede a [Responsabilidades Claras](#responsabilidades-claras).
 
-Responsabilidades Claras
+## Responsabilidades Claras
 
-	•	Correlación con: BackendStructureDoc_v2.0.md
-	•	Descripción: Aquí se define la lógica de backend, incluyendo servicios y cómo se comunican con el frontend.
-	•	Acción: Referenciar BackendStructureDoc_v2.0.md para asegurar que cada servicio cumple con su rol específico sin solapamientos.
+- **Correlación con:** [BackendStructureDoc_v2.0.md](#documento-de-estructura-backend-para-smartfinancetracker-v20)
+- **Descripción:** Aquí se define la lógica de backend, incluyendo servicios y cómo se comunican con el frontend.
+- **Acción:** Referenciar [BackendStructureDoc_v2.0.md](#documento-de-estructura-backend-para-smartfinancetracker-v20) para asegurar que cada servicio cumple con su rol específico sin solapamientos.
 
+```swift
 // Ejemplo de cómo se define la responsabilidad del PDFProcessingService
 func extractAndCategorize(from pdfURL: URL) -> [Transaction] {
     // Pseudocódigo para la extracción y categorización
@@ -54,3 +55,6 @@ context.perform {
 }
 
 Próximos Pasos: Una vez configurado Core Data, continúa con Integración con APIs.
+
+
+El siguiente documento que necesitas proporcionarme para su revisión y modificación es el `TechStackDoc_v1.1.md`.
