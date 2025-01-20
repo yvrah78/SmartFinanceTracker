@@ -1,4 +1,4 @@
-Guía de Implementación para SmartFinanceTracker v2.1
+Guía de Implementación para SmartFinanceTracker v2.0
 
 Esta guía está diseñada para proporcionar una dirección clara en la implementación del proyecto SmartFinanceTracker, asegurando que cada paso del desarrollo sea intencional y coherente con la visión del proyecto. Cada sección de esta guía se enlaza con la documentación existente para mantener la consistencia.
 
