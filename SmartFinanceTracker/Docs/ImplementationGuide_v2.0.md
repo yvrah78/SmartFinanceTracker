@@ -55,6 +55,3 @@ context.perform {
 }
 
 Próximos Pasos: Una vez configurado Core Data, continúa con Integración con APIs.
-
-
-El siguiente documento que necesitas proporcionarme para su revisión y modificación es el `TechStackDoc_v1.1.md`.

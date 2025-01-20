@@ -90,6 +90,3 @@ func extractTransactions(from pdfURL: URL) -> [Transaction] {
 	1.	Preparación para la API: Los datos extraídos se formatean en un JSON que cumple con el esquema esperado por la API.
 
 Próximos Pasos: Con el flujo de datos definido, avanza a Manejo de Core Data.
-
-
-El siguiente documento que necesitas proporcionarme para su revisión y modificación es el `DataIntegrityAndBackupStrategy_v2.0.md`.

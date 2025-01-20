@@ -69,6 +69,3 @@ Herramientas de Desarrollo
 	•	GitHub: Plataforma para el control de versiones y la colaboración en el desarrollo del proyecto. Aquí se alojará el código y la documentación.
 
 Próximos Pasos: Una vez configuradas las herramientas de desarrollo, procede a Responsabilidades Claras.
-
-
-El siguiente documento que necesitas proporcionarme para su revisión y modificación es el `BackendStructureDoc_v2.0.md`.
